@@ -1,5 +1,7 @@
 import React from 'react';
 import styles from './AsksModal.module.scss';
+import closeIcon from '../../images/SVG/icons.svg';
+import styled from 'styled-components';
 
 const AsksModal = ({ isVisible, onYes, onNo }) => {
   if (!isVisible) {
@@ -8,6 +10,9 @@ const AsksModal = ({ isVisible, onYes, onNo }) => {
 
   return (
     <div className={styles.modal}>
+    <svg className={styles.closeIcon} onClick={onNo}>
+      <use xlinkHref={`${closeIcon}#icon-close`} />
+    </svg>
       <p>Are you sure?</p> 
       <div className={styles.buttonContainer}>
         <button className={styles.button} onClick={onYes}>Yes</button>

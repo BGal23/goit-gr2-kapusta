@@ -1,0 +1,48 @@
+.modal {
+    width: 230px;
+    height: 278px;
+    margin-top: 30px;
+  
+  .summary {
+    width: 230px;
+    height: 38px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #F5F6FB;
+    margin: 0;
+    margin-bottom: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0px 0px;
+  }
+  
+  .table {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+  
+    .row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 2px;
+      background-color: #F5F6FB;
+      width: 230px;
+      height: 38px;
+      box-sizing: border-box;
+
+      .row:last-child {
+        border-bottom-right-radius: 10px;
+        margin-bottom: 0px;
+      }
+
+      .month, .amount {
+        font-size: 12px;
+        margin: auto 0;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+  }
+}
+  
