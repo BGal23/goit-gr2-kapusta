@@ -1,1 +1,0 @@
-import{v as o,a as c,j as s}from"./index-DcO2K8lZ.js";const a="_RedirBox_182ts_1",i="_RedirText_182ts_13",r={RedirBox:a,RedirText:i},n=()=>{const[t]=o(),e=t.get("token");return c.useEffect(()=>{console.log(e)},[e]),s.jsx("div",{className:r.RedirBox,children:s.jsx("b",{className:r.RedirText,children:"Redirecting..."})})};export{n as default};
